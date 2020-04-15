@@ -1,3 +1,20 @@
+## Projeto para apenas criar um container Docker com um app React
+### Para testar em sua máquina:
+
+Build na imagem do Dockerfile:
+
+
+`Docker build -t sample:dev .`
+
+Executar o container criado:
+
+
+`docker run -it -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm sample:dev`
+
+Acesse [http://localhost:3001](http://localhost:3001)
+
+
+########
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
